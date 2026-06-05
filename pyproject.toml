@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "runway-sim-command-cli"
+version = "0.1.0"
+description = "A dependency-free Python CLI for modeling startup runway, burn, revenue growth, and scenario packs."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+runway-sim-command-cli = "runway_sim_command_cli.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
